@@ -15,3 +15,7 @@ Explore ruby on rails
 - use `rails new demo` to create a new demo project, and `cd demo` to move into demo 
 - `rails server` should start the server and you may access it at localhost:3000
 - you should see a Yay! You're on Rails! webpage
+
+## Library project
+- `rails new library` to setup skeleton structure for library application
+- navigate to the library directory and use `Rails server` to run
