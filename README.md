@@ -19,3 +19,10 @@ Explore ruby on rails
 ## Library project
 - `rails new library` to setup skeleton structure for library application
 - navigate to the library directory and use `Rails server` to run
+
+## Setup database with MySQL on OSX
+- run `sudo launchctl load -F /Library/LaunchDaemons/com.oracle.oss.mysql.mysqld.plist` to start up mysql server
+- once you login to mySQL, `create database library_development;`
+- `grant all privileges on library_development.* to 'root'@'localhost' identified by 'password';`
+- `FLUSH PRIVILEGES;`
+- repeat for library_production and library test
