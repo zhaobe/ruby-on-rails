@@ -12,7 +12,7 @@ Explore ruby on rails
 - check the rails version with `rails -v`
 
 ## Demo project
-- use `rails new demo` to create a new demo project, and `cd demo` to move into demo 
+- use `rails new demo` to create a new demo project, and `cd demo` to move into demo
 - `rails server` should start the server and you may access it at localhost:3000
 - you should see a Yay! You're on Rails! webpage
 
@@ -26,3 +26,35 @@ Explore ruby on rails
 - `grant all privileges on library_development.* to 'root'@'localhost' identified by 'password';`
 - `FLUSH PRIVILEGES;`
 - repeat for library_production and library test
+- after creating the three databases, you will need to configure /library/config/database.yml
+
+```ruby
+development:
+   adapter: mysql
+   database: library_development
+   username: root
+   password: [password]
+   host: localhost
+
+test:
+   adapter: mysql
+   database: library_test
+   username: root
+   password: [password]
+   host: localhost
+
+production:
+   adapter: mysql
+   database: library_production
+   username: root
+   password: [password]
+   host: localhost
+```
+## Setup database with PostgreSQL via Homebrew on OSX
+- if you already have PostgreSQL installed through Homebrew run:
+  - `brew services start postgresql` to start postgres
+  - `brew services stop postgresql` to stop postgres
+  - `brew services restart postgresql` to restart postgres
+
+
+
