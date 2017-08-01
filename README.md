@@ -50,11 +50,14 @@ production:
    password: [password]
    host: localhost
 ```
+- had to add `gem 'mysql2'` to library/Gemfile, then run `bundle install` to install missing gems
+
 ## Setup database with PostgreSQL via Homebrew on OSX
 - if you already have PostgreSQL installed through Homebrew run:
   - `brew services start postgresql` to start postgres
   - `brew services stop postgresql` to stop postgres
   - `brew services restart postgresql` to restart postgres
 
-
-
+## Creating Active Records
+- `rails generate model Book`
+- `rails generate model Subject`
