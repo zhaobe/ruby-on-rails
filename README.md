@@ -59,6 +59,13 @@ production:
   - `brew services restart postgresql` to restart postgres
 
 ## Creating Active Records
-- `rails generate model Book`
+- `cd library; rails generate model Book`
 - `rails generate model Subject`
 - These commands generate the model file which holds all the methods
+
+## Creating Migrations
+- `cd library; rails generate migration books`
+- `rails generate migration subjects`
+- The commands above generate the rails migration, it keeps the db schema sync between developers.
+
+
