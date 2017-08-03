@@ -61,3 +61,4 @@ production:
 ## Creating Active Records
 - `rails generate model Book`
 - `rails generate model Subject`
+- These commands generate the model file which holds all the methods
