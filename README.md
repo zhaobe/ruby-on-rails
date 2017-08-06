@@ -67,5 +67,6 @@ production:
 - `cd library; rails generate migration books`
 - `rails generate migration subjects`
 - The commands above generate the rails migration, it keeps the db schema sync between developers.
-
+- Encountered an error with running `rake db:migrate`, had to run `gem install bundler; bundle install` but did not resolve error.
+- 
 
