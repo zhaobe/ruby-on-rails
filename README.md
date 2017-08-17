@@ -68,6 +68,9 @@ production:
 - `rails generate migration subjects`
 - The commands above generate the rails migration, it keeps the db schema sync between developers.
 
+## Creating Controllers
+- run `rails generate controller Book` to create files for Book controller.
+
 ## Take Note Of...
 - The library/db/migrate/*_subjects.rb and library/db/migrate/*_books.rb file have drop_table first and then creation of the tables in self.up. Should remove the drop_table line of code.
 
