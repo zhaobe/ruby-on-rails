@@ -1,0 +1,13 @@
+<% if @books.blank? %>
+<p>There are no books in the system.</p>
+<% else %>
+<p>These are the current books in the system</p>
+
+<ul id = "books">
+   <% @books.each do |c| %>
+   <li><%= link_to c.title, {:action => 'show', :id => c.id} -%></li>
+   <% end %>
+</ul>
+
+<% end %>
+<p><%= link_to "Add new Book", {:action => 'new' }%></p>
