@@ -1,0 +1,23 @@
+<h1>Add a new book form</h1>
+
+<!--the form_tag method is similar to <form action = "/book/create" method="post" >-->
+<%= form_tag :action => 'create' do %>
+<p><label for = "book_title">Title</label>:
+  
+<!--text_field outputs and <input> tag, and the params are <object, field name>-->
+<%= text_field 'books', 'title' %></p>
+<p><label for = "book_price">Price</label>:
+
+<%= text_field 'books', 'price' %></p>
+<p><label for = "book_subject_id">Subject</label>:
+
+<!--collection_select creates a select menu built from array, this one has five params-->
+<%= collection_select(:books, :subject_id, @subjects, :id, :name, prompt: true) %></p>
+<p><label for = "book_description">Description</label><br/>
+
+<%= text_area 'books', 'description' %></p>
+<!--the submit_tag is the  <input> button for submitting the form-->
+<%= submit_tag "Create" %>
+
+<% end -%>
+<%= link_to 'Back', {:action => 'list'} %>
