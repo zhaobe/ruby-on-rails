@@ -77,7 +77,10 @@ production:
 
 ## Creating Views
 - run `rails server` to start the server and go to localhost:3000/book/list to see list.html.erb
-
+  - created a view file for the listing (list method)
+  - created a view file for adding a new book (new method)
+  - created a view file for showing the book in the system (show method)
+  - created a view file for editing a book (edit method)
 
 ## Take Note Of...
 - The library/db/migrate/*_subjects.rb and library/db/migrate/*_books.rb file have drop_table first and then creation of the tables in self.up. Should remove the drop_table line of code.
