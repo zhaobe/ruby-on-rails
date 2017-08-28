@@ -16,7 +16,7 @@ Explore ruby on rails
 - `rails server` should start the server and you may access it at localhost:3000
 - you should see a Yay! You're on Rails! webpage
 
-## Library project
+# Library project
 - `rails new library` to setup skeleton structure for library application
 - navigate to the library directory and use `Rails server` to run
 
@@ -85,7 +85,7 @@ production:
 ## Creating Layouts
 - added a library/app/views/layouts/standard.html.erb to handle layout
 - then added a line of code in library/app/controllers/book_controller.rb in order to use new standard.html.erb layout
-- TODO: debug the style not in pipeline error...
+- style not in pipeline error solution: stylesheets should be in library/app/assets/stylesheets/style.css
 
 ## Take Note Of...
 - The library/db/migrate/*_subjects.rb and library/db/migrate/*_books.rb file have drop_table first and then creation of the tables in self.up. Should remove the drop_table line of code.
@@ -94,4 +94,6 @@ production:
 ## Issues
 - Encountered an error with running `rake db:migrate`, ran `gem install bundler; bundle install` but did not resolve error.
 
+# Cookbook project
+- `rails new cookbook` and `create database cookbook;` in mysql
 
