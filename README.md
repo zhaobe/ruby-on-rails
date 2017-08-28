@@ -33,21 +33,21 @@ development:
    adapter: mysql
    database: library_development
    username: root
-   password: [password]
+   password:
    host: localhost
 
 test:
    adapter: mysql
    database: library_test
    username: root
-   password: [password]
+   password:
    host: localhost
 
 production:
    adapter: mysql
    database: library_production
    username: root
-   password: [password]
+   password:
    host: localhost
 ```
 - had to add `gem 'mysql2'` to library/Gemfile, then run `bundle install` to install missing gems
@@ -96,4 +96,6 @@ production:
 
 # Cookbook project
 - `rails new cookbook` and `create database cookbook;` in mysql
+- passwords in database.yml should be empty with no spaces as the value, and changed the adapter to 'mysql2'
+- `cd cookbook` and add `gem 'mysql'` to cookbook/Gemfile before you run `rails generate scaffold recipe`
 
