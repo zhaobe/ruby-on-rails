@@ -99,3 +99,8 @@ production:
 - passwords in database.yml should be empty with no spaces as the value, and changed the adapter to 'mysql2'
 - `cd cookbook` and add `gem 'mysql'` to cookbook/Gemfile before you run `rails generate scaffold recipe`
 
+## Cookbook controller
+- the controller is in cookbook/app/controllers/recipes_controller.rb
+- ran `rake db:migrate RAILS_ENV=development` and successfully migrated tables
+- cd into /cookbook and then run `rails server` and new localhost:3000/recipes should direct to cookbook
+TODO: need to fix the form rendering for recipe/new
