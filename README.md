@@ -104,3 +104,6 @@ production:
 - ran `rake db:migrate RAILS_ENV=development` and successfully migrated tables
 - cd into /cookbook and then run `rails server` and new localhost:3000/recipes should direct to cookbook
 TODO: need to fix the form rendering for recipe/new
+
+## Take Note Of...
+- Always run mysql db before going to direct page.
