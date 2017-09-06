@@ -10,15 +10,27 @@ class RecipesController < ApplicationController
   # GET /recipes/1
   # GET /recipes/1.json
   def show
+    @recipe = Recipe.find(params[:id])
+    
+    respond_to do |format|
+      format.html
+      format.xml
+    end
   end
 
   # GET /recipes/new
   def new
     @recipe = Recipe.new
+    
+    respond_to do |format|
+      format.html
+      format.xml
+    end
   end
 
   # GET /recipes/1/edit
   def edit
+    @recipe = Recipe.find(params[:id])
   end
 
   # POST /recipes
@@ -67,7 +79,6 @@ class RecipesController < ApplicationController
       @recipe = Recipe.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def recipe_params
       params.fetch(:recipe, {})
     end
