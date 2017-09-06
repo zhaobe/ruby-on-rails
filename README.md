@@ -103,7 +103,12 @@ production:
 - the controller is in cookbook/app/controllers/recipes_controller.rb
 - ran `rake db:migrate RAILS_ENV=development` and successfully migrated tables
 - cd into /cookbook and then run `rails server` and new localhost:3000/recipes should direct to cookbook
-TODO: need to fix the form rendering for recipe/new
+
+solution to scaffolding without changing any of the methods inside app/controllers
+- had to use `rails g scaffold Recipe title:string instructions:text --force` to overwrite old scaffold
+  - had to run mysql and `drop table recipes;` in order to `bin/rails db:migrate RAILS_ENV=development` 
+  - run `rails server` and you should be able to see the correct scaffold now
+  
 
 ## Take Note Of...
 - Always run mysql db before going to direct page.

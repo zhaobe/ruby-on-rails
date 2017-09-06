@@ -11,15 +11,15 @@
     </div>
   <% end %>
 
-  
-  <div>
-    <p>Title</p>
-    <%= text_field 'recipes', 'title' %></p>
-
-    <p>Instructions</p>
-    <%= text_area 'recipes', 'instructions' %></p>
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :recipe_title %>
   </div>
-  
+
+  <div class="field">
+    <%= form.label :instructions %>
+    <%= form.text_area :instructions, id: :recipe_instructions %>
+  </div>
 
   <div class="actions">
     <%= form.submit %>
