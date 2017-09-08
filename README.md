@@ -107,8 +107,10 @@ production:
 solution to scaffolding without changing any of the methods inside app/controllers
 - had to use `rails g scaffold Recipe title:string instructions:text --force` to overwrite old scaffold
   - had to run mysql and `drop table recipes;` in order to `bin/rails db:migrate RAILS_ENV=development` 
-  - run `rails server` and you should be able to see the correct scaffold now
-  
+  - run `rails server` and you should be able to see the correct scaffold
 
 ## Take Note Of...
 - Always run mysql db before going to direct page.
+
+# RoR with Ajax
+- 
