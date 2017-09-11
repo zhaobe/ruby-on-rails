@@ -116,3 +116,4 @@ solution to scaffolding without changing any of the methods inside app/controlle
 - `rails new ponies` then `rails generate scaffold Pony name:string profession:string`
 - `rake db:migrate` to run migrations for the current env, you can use `rake db:migrate:status` to check the status
 - `rails s` to run the rails application, open browser to http://localhost:3000/ponies/new
+
