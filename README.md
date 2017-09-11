@@ -117,3 +117,7 @@ solution to scaffolding without changing any of the methods inside app/controlle
 - `rake db:migrate` to run migrations for the current env, you can use `rake db:migrate:status` to check the status
 - `rails s` to run the rails application, open browser to http://localhost:3000/ponies/new
 
+# Testfile project
+- `rails new testfile; cd testfile`, `gem install carrierwave`, `gem install bootstrap-sass`
+- Add two lines to Gemfile for carrierwave and bootstrap-sass then ran `bundle install`
+- `rails g model Resume name:string attachment:string` to generate model
