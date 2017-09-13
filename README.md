@@ -121,3 +121,5 @@ solution to scaffolding without changing any of the methods inside app/controlle
 - `rails new testfile; cd testfile`, `gem install carrierwave`, `gem install bootstrap-sass`
 - Add two lines to Gemfile for carrierwave and bootstrap-sass then ran `bundle install`
 - `rails g model Resume name:string attachment:string` to generate model
+- `rake db:migrate`
+- `rails g uploader attachment` to create an uploader
