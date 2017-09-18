@@ -118,8 +118,16 @@ solution to scaffolding without changing any of the methods inside app/controlle
 - `rails s` to run the rails application, open browser to http://localhost:3000/ponies/new
 
 # Testfile project
-- `rails new testfile; cd testfile`, `gem install carrierwave`, `gem install bootstrap-sass`
+- `rails new testfile; cd testfile`
 - Add two lines to Gemfile for carrierwave and bootstrap-sass then ran `bundle install`
+  - gem 'carrierwave', '~> 0.9'
+  - gem 'bootstrap-sass', '~> 2.3.2'
 - `rails g model Resume name:string attachment:string` to generate model
+  - if the `rails g` hangs during execution that would mean there are generated binstubs from the previous same name project
+    - for more information about binstubs read (here) [https://github.com/rbenv/rbenv/wiki/Understanding-binstubs]
+    - for rails 4 use this command, `bundle install --binstubs`
+    - for rails 5 user this command, `rake app:update:bin` (our project used this one)
+    - then run `rails g model Resume name:string attachment: string` and it should work
 - `rake db:migrate`
+- `rails g controller Resumes index new create destroy` generates the controllers needed
 - `rails g uploader attachment` to create an uploader
