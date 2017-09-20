@@ -131,3 +131,12 @@ solution to scaffolding without changing any of the methods inside app/controlle
 - `rake db:migrate`
 - `rails g controller Resumes index new create destroy` generates the controllers needed
 - `rails g uploader attachment` to create an uploader
+- Files added/modified:
+  - app/models/resume.rb
+  - config/routes.rb
+  - app/controllers/resumes_controller.rb:
+  - app/assets/stylesheets/resumes.css.scss:
+  - app/views/layouts/application.html.erb:
+  - app/views/resumes/index.html.erb:
+  - app/views/resumes/new.html.erb:
+  - app/uploaders/attachment_uploader.rb
