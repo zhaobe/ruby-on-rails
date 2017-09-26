@@ -142,5 +142,4 @@ solution to scaffolding without changing any of the methods inside app/controlle
   - app/uploaders/attachment_uploader.rb
 - when a resume is uploaded it is stored in testfile/public/uploads
 
-# Send Emails with Ruby on Rails
-- `rails new mailtest`
+- Skipping the send emails tutorial project for Ruby on Rails
