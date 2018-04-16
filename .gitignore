@@ -51,3 +51,4 @@ build-iPhoneSimulator/
 
 # not adding config
 /library/config/
+/cookbook/config/secrets.yml
